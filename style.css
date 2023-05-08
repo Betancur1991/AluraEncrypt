@@ -1,0 +1,240 @@
+body{
+    margin-top: 20px;
+    background: #F3F5FC;
+}
+
+.container{
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    margin-bottom: 10px;
+}
+
+nav img{
+    position:relative;
+    left: -40px;
+
+}
+
+.texto {
+    position:relative;
+    left: -20px;
+    width: 300px;
+    height: 40vh;
+    border: none;
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+::placeholder{color: #0A3871;}
+.texto:focus{
+    outline:none;
+}
+.textoIngresado {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.resp {
+    position:relative;
+    left: -20px;
+    width: 300px;
+    height: 20vh;
+    border: none;
+    background: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 24px;
+}
+.resp:focus{
+    outline:none;
+}
+
+.contenidoDefectoRespu{
+    position: relative;
+    top: -80px;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+
+.encript{
+    background: #0A3871;
+    color: #FFFFFF;
+    }
+    
+    .decrypt, .copy{
+        background: #D8DFE8;
+        color: #0A3871;
+    }
+
+    .copy{
+        width: 300px;
+    }
+    
+    .encript, .decrypt ,.copy{
+        height: 67px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        border-radius: 24px;
+        box-sizing: border-box;
+        border: 1px solid #0A3871;
+    }    
+
+    .muñeco{
+        display:none;
+    }
+    
+    .mensaje-r1{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+    }
+    
+    .mensaje-r2 {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+    }
+    
+    
+
+    footer{
+        width: auto;
+        margin-top: 50px;
+        background: #343A40;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .textFooter{
+        color: #D8DFE8;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    .imgFooter{
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    /*Formato Tablet*/
+    
+    @media screen and (min-width: 525px) and (max-width: 1024px){
+        .container{
+            width: 500px;   
+        }
+
+        .texto {
+            width: 500px;
+            height: 40vh;
+        }
+
+        .btn{
+            flex-direction:row;
+            gap: 10px;
+        }
+
+        .encript, .decrypt,.copy{
+            width: 230px;
+        }
+
+        .resp {
+            width: 500px;
+            height: 20vh;
+        }
+
+        .copy{
+            width: 300px;
+            margin-left: 100px;
+        }
+    }
+
+    /*Formato Desktop*/
+
+    @media screen and (min-width: 1025px){
+        .container{
+            width: 1020px;
+        }
+
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .texto {
+            width: 500px;
+            height: 70vh;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .muñeco{
+            display:block;
+        }
+
+        .btn{
+            flex-direction:row;
+            gap: 10px;
+        }
+
+        .encript, .decrypt,.copy{
+            width: 300px;
+            height: 58px;
+        }
+
+        .textoEntregado .decrypt{
+            margin-left: 25px;
+        }
+
+        .copy{
+            position: relative;
+            left: 12px;
+            top: -180px;
+        }
+
+        .resp {
+            width: 320px;
+            height: 700px;
+            background-image: url("img/Muñeco.png");
+            background-repeat: no-repeat;
+            background-position: center 200px;
+        }
+        .contenidoDefectoRespu{
+            top: -200px;
+            left: -10px;
+        }
+    }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;700&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@100&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img src="img/Logo.png" alt="logo">
+            </nav>
+        </header>
+        <main>
+            <div class="textoIngresado">
+                <textarea class="texto" id="texto" onclick="this.placeholder = ''" placeholder="Ingrese el texto aquí"></textarea>
+                <p><img src="img\exclamtion.png" alt="exclamtion" class="textUse">Only lowercase letters and without accent</p>
+                <div class="btn">
+                    <button class="encript" id="encript" onclick="btnEncriptar()">Encript</button>
+                    <button class="decrypt" id="decrypt" onclick="btnDesencriptar()">Decrypt</button>
+                </div>
+            </div>
+            <div class="textoEntregado">
+                <textarea name="respuesta" id="respuesta" class="resp" ></textarea>
+                <div class="contenidoDefectoRespu">
+                    <h2 class="mensaje-r1">No message was found</h2>
+                    <p class="mensaje-r2">Enter the text you want to encrypt or decrypt</p>
+                </div>
+                <button class="copy" id="copy">Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <P class="textFooter">PERFORMED BY:   DANIEL FELIPE BETANCUR CÓRDOBA</P>
+            <a href="https://www.linkedin.com/in/daniel-felipe-betancur-cordoba/">
+                <img src="img/linkedin.png" alt="linkedin" class="imgFooter"/>
+            </a>
+            <a href="https://github.com/Betancur1991">
+                <img src="img/github.png" alt="github" class="imgFooter" />
+            </a>
+        </footer> 
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
